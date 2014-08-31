@@ -5,7 +5,7 @@ class StatesController < ApplicationController
   
   def index
     if params['search']
-      @states = State.where(abbreviation: params['search'].upcase)
+      @states = State.where(abbreviation: params['search'].upcase.gsub(" ", ""))
     else
       @states = State.all
     end
