@@ -1,0 +1,33 @@
+<h1>States</h1>
+
+<p><a href="/new_state">Add a New State</a></p>
+
+<div class="panel panel-default">
+      <!-- Default panel contents -->
+  <div class="panel-heading">States</div>
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>State #</th>
+            <th>State</th>
+            <th>Abbreviation</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @states.each do |state| %>
+          <tr>
+            <td><%= state.id %></td>
+            <td><%= state.name %></td>
+            <td><%= state.abbreviation %></td>
+            <td><a href="/states/<%= state.id %>">Show</a></td>
+            <td><a href="/states/<%= state.id %>/edit">Edit</a></td>
+            <td><a href="/states/<%= state.id %>/destroy">Destroy</a></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>

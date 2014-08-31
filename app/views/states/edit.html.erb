@@ -1,0 +1,17 @@
+<h1>Editing State #<%= @state.id %></h1>
+
+<form action="/states/<%= @state.id %>/update">
+  <div>
+    <label for="name">name</label><br />
+    <input id="name" name="name" value="<%= @state.name  %>" type="text" />
+  </div>
+  <div>
+    <label for="abbreviation">abbreviation</label><br />
+    <input id="abbreviation" name="abbreviation" value="<%= @state.abbreviation  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
