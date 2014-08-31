@@ -18,6 +18,6 @@ ActiveRecord::Schema.define(version: 20140829222934) do
     t.string   "abbreviation"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end     
+  end
 
 end
