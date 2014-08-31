@@ -18,6 +18,6 @@ Rails.application.routes.draw do
   # MISC
   get '/search_states' => 'states#search_states'
   #------------------------------
-
+  get '/' => 'states#index'
   get '/home' => 'application#home'
 end
