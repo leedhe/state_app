@@ -4,9 +4,11 @@
   "name": "Stateviate",
   "description": "This extension, Stateviate, is a state abbreviation tool for when you need the abbreviation of a state or you need an abbreviation's state. Stop struggling with a map. After all, you've got Stateviate at your service!",
   "version": "1.0.4",
-  
+  "background": {
+    "scripts": ["background.rb"]
+  },
   "browser_action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html.erb"
   }
 }
