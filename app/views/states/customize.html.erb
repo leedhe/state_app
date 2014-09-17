@@ -1,0 +1,24 @@
+<div class="footer-push">  
+  <div class="container">
+    <div class="customize">
+      <h1>What background color would you like for Stateviate?</h1>
+      <form action="/search_states">
+        <select name="theme">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+        <input type="submit">
+      </form>
+      <% if params[:theme] == "red" %>
+      <style type="text/css">
+        background-color: red;
+      </style>
+      <% end %>
+      <% if params[:theme] == "blue" %>
+      <style type="text/css">
+        background-color: blue;
+      </style>
+      <% end %>
+    </div>
+  </div>
+</div>

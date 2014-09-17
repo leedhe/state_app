@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   #------------------------------
   get '/' => 'states#search_states'
   get '/home' => 'application#home'
+  get '/customize' => 'states#customize'
 end

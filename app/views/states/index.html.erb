@@ -1,26 +1,29 @@
-<div class="panel panel-default">
-      <!-- Default panel contents -->
-  <div class="panel-heading"><h1>States</h1></div>
-      <!-- Table -->
-      <table class="table">
-        <thead>
-          <tr>
-            <th>State #</th>
-            <th>State</th>
-            <th>Abbreviation</th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @states.each do |state| %>
-          <tr>
-            <td><%= state.id %></td>
-            <td><%= state.name %></td>
-            <td><%= state.abbreviation %></td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+<div class="footer-push">  
+  <div class="panel panel-default">
+        <!-- Default panel contents -->
+    <div class="panel-heading"><h1>States</h1></div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>State #</th>
+              <th>State</th>
+              <th>Abbreviation</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @states.each do |state| %>
+            <tr>
+              <td><%= state.id %></td>
+              <td><%= state.name %></td>
+              <td><%= state.abbreviation %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+</div>
+<h3><a href="/search_states">Get another state &rarr;</a></h3>

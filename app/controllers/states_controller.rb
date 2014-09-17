@@ -53,4 +53,7 @@ class StatesController < ApplicationController
 
     redirect_to "/states"
   end
+  
+  def customize
+  end
 end

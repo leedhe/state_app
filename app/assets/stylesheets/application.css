@@ -18,6 +18,9 @@
   text-align: center;
 }
 
+.footer-push {
+  height: 600px;
+}
 body {
   background-color: #fff;
 }
