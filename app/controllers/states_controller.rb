@@ -3,6 +3,9 @@ class StatesController < ApplicationController
   def search_states
   end
   
+  def change_theme
+  endß
+  
   def index
     if params['search']
       @states = State.where(abbreviation: params['search'].upcase.gsub(" ", ""))
