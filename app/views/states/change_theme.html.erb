@@ -1,0 +1,21 @@
+
+<h1> <b> www.infolet.org </b> </h1>
+<form name="myform">
+<select name = "list" size="10" onclick="changecolor()" >
+  <option value = "violet"> Violet </option>
+  <option value = "indigo"> Indigo </option>
+  <option value = "blue"> Blue </option>
+  <option value = "green"> Green </option>
+  <option value = "indigo"> Indigo </option>
+  <option value = "yellow"> Yellow </option>
+  <option value = "orange"> Orange </option>
+  <option value = "red"> Red </option>
+</select>
+</form>
+
+<script type="text/javascript">
+function changecolor()
+{var clr = document.myform.list.value;
+document.bgColor=clr;
+}
+</script>
