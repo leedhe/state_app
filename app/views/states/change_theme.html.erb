@@ -1,21 +1,23 @@
-
-<h1> <b> www.infolet.org </b> </h1>
-<form name="myform">
-<select name = "list" size="10" onclick="changecolor()" >
-  <option value = "violet"> Violet </option>
-  <option value = "indigo"> Indigo </option>
-  <option value = "blue"> Blue </option>
-  <option value = "green"> Green </option>
-  <option value = "indigo"> Indigo </option>
-  <option value = "yellow"> Yellow </option>
-  <option value = "orange"> Orange </option>
-  <option value = "red"> Red </option>
+<h1 style="font-family: Maven Pro">Change the theme of Stateviate</h1>
+<h3 class="text-muted" style="font-family: Maven Pro">Add a little jazz into your abbreviating.</h3>
+<form name="changetheme">
+<select name="dropdown" size="10">
+  <option value="violet"> Violet </option>
+  <option value="indigo"> Indigo </option>
+  <option value="red"> Red </option>
+  <option value="orange"> Orange </option>
+  <option value="yellow"> Yellow </option>
+  <option value="green"> Green </option>
+  <option value="blue"> Blue </option>
+  <option value="indigo"> Indigo </option>
+  <option value="violet"> Violet </option>
 </select>
+  <input type="button" value="Click to change theme" onclick="changeColor()">
 </form>
 
 <script type="text/javascript">
-function changecolor()
-{var clr = document.myform.list.value;
-document.bgColor=clr;
-}
+function changeColor()
+{var clr = document.changetheme.dropdown.value;
+document.body.style.backgroundColor = clr;
+};
 </script>

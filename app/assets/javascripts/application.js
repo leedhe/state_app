@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function changecolor()
+{var clr = document.myform.list.value;
+document.bgColor=clr;
+};

@@ -4,7 +4,7 @@ class StatesController < ApplicationController
   end
   
   def change_theme
-  endß
+  end
   
   def index
     if params['search']
