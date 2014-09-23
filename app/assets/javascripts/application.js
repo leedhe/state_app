@@ -16,6 +16,7 @@
 //= require_tree .
 
 function changeColor() {
-  var clr = document.changetheme.dropdown.value;
+  var clr = document.changetheme.bgTheme.value;
   $('body').css('background-color', clr);
 };
+

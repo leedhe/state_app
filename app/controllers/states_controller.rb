@@ -4,6 +4,7 @@ class StatesController < ApplicationController
   end
   
   def change_theme
+    @theme = params[:bgTheme]
   end
   
   def index
