@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-function changecolor()
-{var clr = document.myform.list.value;
-document.bgColor=clr;
+function changeColor() {
+  var clr = document.changetheme.dropdown.value;
+  $('body').css('background-color', clr);
 };
