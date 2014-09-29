@@ -1,11 +1,18 @@
 <h1 style="font-family: Maven Pro">Change the theme of Stateviate</h1>
 <h3 class="text-muted" style="font-family: Maven Pro">Add a little jazz into your abbreviating.</h3>
 <form name="changetheme">
-  <input type="text" placeholder="Enter color here" name="bgTheme">
-  <input type="button" value="Click to change theme" onclick="changeColor()">
+ <select name="bgTheme">
+	<option name="red"><a href="#" rel="red.css">Red</a></option>
+	<option name="orange"><a href="#" rel="orange.css">Orange</a></option>
+	<option name="yellow"><a href="#" rel="yellow.css">Yellow</a></option>
+   <option name="green"><a href="#" rel="green.css">Green</a></option>
+   <option name="blue"><a href="#" rel="blue.css">Blue</a></option>
+   <option name="indigo"><a href="#" rel="indigo.css">Indigo</a></option>
+   <option name="violet"><a href="#" rel="violet.css">Violet</a></option>
+</select>
+  <input type="button" value="Click to change theme" onclick="changeColor()" class="changeButton">
 </form>
 <h3><a href="search_states">Now let's search a state &rarr;</a></h3>
-
 
 
 <!-- <select name="dropdown" size="10">
