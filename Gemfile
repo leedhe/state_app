@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'starter_generators', :git => 'https://github.com/arjunvenkat/starter_generators.git'
 
+gem 'has_scope'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
@@ -11,7 +13,7 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rails_12factor'    
+  gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

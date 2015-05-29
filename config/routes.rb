@@ -19,5 +19,4 @@ Rails.application.routes.draw do
   get '/search_states' => 'states#search_states'
   #------------------------------
   get '/' => 'states#search_states'
-  get '/change_theme' => 'states#change_theme'
 end

@@ -1,15 +1,10 @@
 class StatesController < ApplicationController
 
-  def search_states
-  end
-  
-  def change_theme
-    @theme = params[:bgTheme]
-  end
-  
   def index
     if params['search']
       @states = State.where(abbreviation: params['search'].upcase.gsub(" ", ""))
+    elsif params['search_second']
+      @states = State.where(name: params['search_second'].capitalize.gsub(" ", ""))
     else
       @states = State.all
     end
@@ -57,7 +52,10 @@ class StatesController < ApplicationController
 
     redirect_to "/states"
   end
-  
+
+  def search_states
+  end
+
   def customize
   end
 end

@@ -19,15 +19,20 @@
 }
 
 .footer-push {
-  height: 600px;
+  height: 700px;
 }
 body {
-  background-color: #fff;
+  height: cover;
+  background-color: #FF6600;
+  background-image:
+    linear-gradient(
+      #FF6600, #fff
+    );
 }
 
 .footer-push {
-   height: 500px; 
-   padding-top: 100px;
+   height: 650px; 
+   padding-top: 150px;
 }
 
 footer {

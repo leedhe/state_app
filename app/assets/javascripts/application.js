@@ -17,11 +17,5 @@
 
 function changeColor() {
   var clr = document.changetheme.bgTheme.value;
-
-    $(document).ready(function() { 
-      $('.changeButton').click(function() { 
-        $("link").attr("href",$(this).attr('rel'));
-        return false;
-      });
-    });
+  $('body').css('background-color', clr);
  }
